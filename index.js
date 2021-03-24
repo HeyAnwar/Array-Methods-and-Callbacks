@@ -55,9 +55,10 @@ Use the higher-order function called getYears to do the following:
 
 
 function getYears(array, callback) {
-    
+    return callback(array).map((game) => game.Year)
 }
 
+getYears(fifaData, getFinals)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
